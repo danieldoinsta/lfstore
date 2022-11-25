@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(fundo.jfif);
+}
+
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+}
+
+.foto-album img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-album{
+    filter:brightness(.4);
+    width: 300px;
+    height: 300px;
+    border: 10px ridge rgb(218, 12, 12);
+    flex-grow: 0.2;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    transition: transform .7s;
+    cursor: url(img/cur7.cur),default;
+}
+
+.foto-album:hover{
+    filter:brightness(1.3); 
+    transform: scale(1.2);
+    border: 5px rgb(202, 6, 6);
+}
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 2px rgb(9, 145, 15);
+    letter-spacing: 4px;
+    text-decoration: double;
+    text-align: center;
+    color: rgb(236, 11, 41);
+    background-color: rgb(207, 207, 207);
+}
+
+h1:hover{
+    background-color: rgb(236, 157, 126);
+}
+
+footer{
+    display:block;
+    position: fixed;
+    bottom: 0vh;
+    left: 0%;
+    width: 100%;
+    background:rgb(253, 253, 253);
+    text-align: center;
+    font-size: large;
+
+}
